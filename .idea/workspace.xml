@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c04ecf06-dcd0-46b0-84e6-37536fc76099" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/my_app/new_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_app/new_search.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
