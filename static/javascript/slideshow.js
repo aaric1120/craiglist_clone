@@ -19,6 +19,10 @@ function showCards(n){
         pageIndex = 0;
         n = 0;
      }
+     if (n < 0){
+        pageIndex=parseInt(cards.length / 10);
+        n = parseInt(cards.length / 10);
+     }
      console.log(n)
     for (i=0; i < cards.length; i++){
        if (i >= (0 + (n*10)) && i <= (9 + (n*10))){
