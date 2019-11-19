@@ -1,3 +1,8 @@
+img {
+    max-width: 360px;
+    max-height: 240px;
+}
+
 .card {
     height: 400px; /* Your height here */
     overflow: hidden;
@@ -7,3 +12,7 @@
     height: 250px; /* Your height here */
     overflow: hidden;
 }
+
+.prev { cursor: pointer; }
+.next { cursor: pointer; }
+

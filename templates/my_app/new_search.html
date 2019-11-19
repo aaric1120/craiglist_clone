@@ -1,28 +1,33 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 <div class="row">
 {% for item in final_postings %}
 <div class="col s4">
       <div class="card">
-        <div class="card-image">
-          <a href="{{ item.1 }}"><img src="{{ item.3 }}"></a>
-          <!--
-          <img src="static/images/sample-1.jpg">
-          -->
-          <span class="card-title">Test</span>
+        <div class="slideshow-container--{{item.4}}">
+          <a class="prev" onclick="plusSlides(-1, {{item.4}})">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, {{item.4}})">&#10095;</a>
+          {% for image in item.3 %}
+            <div class="mySlides">
+              <a href="{{ item.1 }}"><img src="{{ image }}"></a>
+              <span class="card-title"></span>
+            </div>
+          {% endfor %}
+
         </div>
+
         <div class="card-content">
           <a href="{{ item.1 }}">{{ item.0 }}</a>
           <p>PRICE: {{ item.2 }}</p>
 
         </div>
-        <div class="card-action">
-          <a href="/">This is a link test</a>
-        </div>
       </div>
 </div>
 {% endfor %}
 </div>
+<div class="page_buttons" align="center">
+  <a class="prev" onclick="plusPages(-1)"><font size="20">&#11013;</font></a>
+    <a class="next" onclick="plusPages(1)"><font size="20">&#10145;</font></a>
+  </div>
 {% endblock content %}
